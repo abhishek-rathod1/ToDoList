@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>To do List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap Font Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <h1 class="text-center app-name">To-Do List</h1>
+    <div id="form-div" class="form-div">
+      <form id="my-form">
+        <input type="text" id="itemName" placeholder="Item Name" />
+        <input
+          id="deadline"
+          placeholder="Deadline"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')"
+        />
+        <select name="priority" id="priority">
+          <option disabled selected>Priority</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+          <!-- <option value="audi">Audi</option> -->
+        </select>
+        <button id="addItemBtn" type="submit">Add Item</button>
+      </form>
+    </div>
+
+    <section id="todayList" class="todayList">
+      <h3 class="heading">Today's TodoList</h3>
+      <div id="today-list"></div>
+
+      <!-- <div class="item-div dark">
+        <div class="item-name">1.item Name</div>
+        <div class="item-deadline">item Deadline</div>
+        <div class="item-priority">item priority</div>
+        <div class="dlt-icon"><i class="bi bi-trash3"></i></div>
+      </div>
+      <div class="item-div dark">
+        <div class="item-name">1.item Name</div>
+        <div class="item-deadline">item Deadline</div>
+        <div class="item-priority">item priority</div>
+        <div class="dlt-icon"><i class="bi bi-trash3"></i></div>
+      </div> -->
+    </section>
+    <section id="futureList" class="futureList">
+      <h3 class="heading">Future TodoList</h3>
+      <div id="future-list"></div>
+      <!-- <div class="item-div dark">
+        <div class="item-name">1.item Name</div>
+        <div class="item-deadline">item Deadline</div>
+        <div class="item-priority">item priority</div>
+        <div class="dlt-icon"><i class="bi bi-trash3"></i></div>
+      </div> -->
+    </section>
+    <section id="completedList" class="completedList">
+      <h3 class="heading">Completed TodoList</h3>
+      <div id="completed-list"></div>
+      <!-- <div class="item-div">
+        <div class="item-name">1.item Name</div>
+        <div class="item-deadline">item Deadline</div>
+        <div class="item-priority">item priority</div>
+        <div class="dlt-icon"><i class="bi bi-trash3"></i></div>
+      </div>
+      <div class="item-div">
+        <div class="item-name">1.item Name</div>
+        <div class="item-deadline">item Deadline</div>
+        <div class="item-priority">item priority</div>
+        <div class="dlt-icon"><i class="bi bi-trash3"></i></div>
+      </div> -->
+    </section>
+
+    <script src="./script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
